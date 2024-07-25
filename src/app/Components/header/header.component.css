@@ -1,0 +1,53 @@
+.container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25%;
+  align-items: center;
+}
+.container img {
+  width: 150px;
+}
+.container .links ul {
+  display: flex;
+  list-style: none;
+}
+.container .links ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: rgba(0, 0, 0, 0.733);
+}
+.container .links ul li:hover {
+  cursor: pointer;
+  color: #009579;
+}
+.container .links ul li i {
+  margin-left: 5px;
+}
+#shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .links ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+.container .links ul a:visited {
+  color: inherit;
+}
+.container .icons {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .icons span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.container .icons span:not(:last-of-type):hover {
+  cursor: pointer;
+  color: #009579;
+}

@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { RouterModule } from '@angular/router';
+import { MainLayoutComponent } from './Components/main-layout/main-layout.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { SearchBarComponent } from './Components/search-bar/search-bar.component';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MainLayoutComponent,
+    HeaderComponent,
+    SearchBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
