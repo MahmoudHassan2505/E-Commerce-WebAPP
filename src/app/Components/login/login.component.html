@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="login form">
+        <header>Login</header>
+        <form action="#">
+            <input #username type="text"
+                placeholder="Enter your email">
+            <input #password type="password"
+                placeholder="Enter your password">
+            <a href="#">Forgot password?</a>
+            <input (click)="login(username.value, password.value)" type="button"
+                class="button"
+                value="Login">
+        </form>
+        <div class="signup">
+            <span class="signup">Don't have an account?
+                <a routerLink="/signup">SignUp</a>
+            </span>
+        </div>
+    </div>
