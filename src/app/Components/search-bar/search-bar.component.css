@@ -1,0 +1,62 @@
+.container {
+  background-color: rgb(89, 163, 150);
+  padding: 0 25%;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+.container .cat {
+  display: flex;
+  padding: 15px;
+  background-color: #009579;
+}
+.container .cat i {
+  font-size: 1.2em;
+}
+.container .cat p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 25px;
+  margin-right: 60px;
+}
+.container .search {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  height: 40px;
+  margin-left: 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.container .search i {
+  color: #009579;
+  font-size: 0.8em;
+}
+.container .search input {
+  flex: 1;
+  margin-left: 15px;
+  border: none;
+}
+.container .search input::placeholder {
+  font-size: 12px;
+  color: #777777;
+}
+.container .search input:focus {
+  border: none;
+  outline: none;
+}
+.container .button {
+  color: white;
+  background-color: #009579;
+  padding: 7px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+.container .button:hover {
+  background-color: black;
+}
