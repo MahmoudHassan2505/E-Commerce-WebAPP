@@ -6,7 +6,7 @@
     </div>
     <div class="search">
         <i class="pi pi-search"></i>
-        <input type="text" placeholder="Enter your keyword...">
-        <div class="button">Search</div>
+        <input #keyword type="text" placeholder="Enter your keyword...">
+        <div class="button" (click)="search(keyword.value)">Search</div>
     </div>
 </div>

@@ -17,17 +17,17 @@ const routes: Routes = [
     ]
 },
 {
-    path:'',
-    redirectTo:'main/home',
-    pathMatch:'full'
-},
-{
     path:'login',
     component:LoginComponent
 },
 {
     path:'signup',
     component:RegisterComponent
+},
+{
+    path:'',
+    redirectTo:'main/home',
+    pathMatch:'full'
 }
 ];
 
