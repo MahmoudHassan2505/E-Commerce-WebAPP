@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LocalStorageService } from '../../Services/local-storage.service';
+import { AuthenticationService } from '../../Services/authentication.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  status:boolean=false;
+
+  constructor(private localStorage:LocalStorageService, private authServices:AuthenticationService){
+    this.status = localStorage.get("status") =="logged"
+    console.log(this.status)
+  }
+
+  logOut() {
+    this.authServices.logOut();
+    }
 }

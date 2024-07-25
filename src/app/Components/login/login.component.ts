@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthenticationService } from '../../Services/authentication.service';
+import { Router } from '@angular/router';
+import { LocalStorageService } from '../../Services/local-storage.service';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +9,7 @@ import { AuthenticationService } from '../../Services/authentication.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  constructor(private authServices:AuthenticationService) {}
+  constructor(private authServices:AuthenticationService, private router:Router,private localStorage:LocalStorageService) {}
 
 
 
@@ -17,8 +19,12 @@ export class LoginComponent {
       console.log("Errors")
     }else{
       
-      console.log(this.authServices.login(username,password))
+      console.log(this.authServices.login(username,password)) 
     }
+    if(this.localStorage.get("status") == "logged"){
+      this.router.navigate(["/main/home"]);
+    }
+  
   }
 
 }

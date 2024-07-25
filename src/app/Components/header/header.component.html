@@ -15,7 +15,8 @@
     <div class="icons">
         <span class="pi pi-heart"></span>
         <span class="pi pi-shopping-cart"></span>
-        <span class="pi pi-user"></span>
+        <span *ngIf="!status" routerLink="/login" class="pi pi-user"></span>
+        <span *ngIf="status" routerLink="/login" (click)="logOut()" class="pi pi-sign-out"></span>
         <span class="total">$500</span>
     </div>
 </div>
