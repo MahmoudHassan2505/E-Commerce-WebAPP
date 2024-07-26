@@ -1,0 +1,57 @@
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 55px;
+  background-color: white;
+  height: 550px;
+  padding: 20px;
+}
+.container .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(158, 157, 157);
+  padding-bottom: 15px;
+}
+.container .head h1 {
+  font-size: 25px;
+  position: relative;
+}
+.container .head h1::before {
+  content: "";
+  position: absolute;
+  bottom: -31px;
+  border-bottom: 2px solid red;
+  width: 60px;
+}
+.container .head ul {
+  display: flex;
+  flex: 1;
+  margin-left: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .head ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .head ul li:hover::before {
+  content: "";
+  border-bottom: 2px solid red;
+  position: absolute;
+  bottom: -16px;
+  width: 100px;
+  cursor: pointer;
+}
+.container .head ul p {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+}
+.container .head ul i {
+  font-size: 2em;
+  text-align: center;
+}

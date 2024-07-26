@@ -1,0 +1,42 @@
+.container {
+  background-image: url(../../../assets/images/slider1.jpg);
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+  color: white;
+  width: 18%;
+}
+.container .content h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.container .content p {
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container .button {
+  color: white;
+  background-color: #009579;
+  padding: 7px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.5s;
+  font-weight: bold;
+  width: fit-content;
+  padding: 15px;
+}
+.container .button:hover {
+  background-color: black;
+  cursor: pointer;
+}

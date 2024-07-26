@@ -10,6 +10,8 @@ import { MainLayoutComponent } from './Components/main-layout/main-layout.compon
 import { HeaderComponent } from './Components/header/header.component';
 import { SearchBarComponent } from './Components/search-bar/search-bar.component';
 import { HomeComponent } from './Components/home/home.component';
+import { LandingComponent } from './Components/landing/landing.component';
+import { TrendingComponent } from './Components/trending/trending.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HomeComponent } from './Components/home/home.component';
     MainLayoutComponent,
     HeaderComponent,
     SearchBarComponent,
-    HomeComponent
+    HomeComponent,
+    LandingComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule,
