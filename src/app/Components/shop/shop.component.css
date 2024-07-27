@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  height: 89.9vh;
+}
+.sidebar {
+  background-color: rgb(95, 141, 133);
+}
+.cards {
+  background-color: rgb(95, 141, 133);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}

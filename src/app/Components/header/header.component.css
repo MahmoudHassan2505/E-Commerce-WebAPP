@@ -24,11 +24,6 @@
 .container .links ul li i {
   margin-left: 5px;
 }
-#shop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .container .links ul a {
   text-decoration: none;
   font-weight: 600;
@@ -46,8 +41,21 @@
 .container .icons span {
   font-size: 1.25rem;
   font-weight: bold;
+  position: relative;
 }
 .container .icons span:not(:last-of-type):hover {
   cursor: pointer;
   color: #009579;
+}
+.active {
+  color: #009579 !important;
+}
+#cart {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: rgb(216, 35, 35);
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 13px;
 }

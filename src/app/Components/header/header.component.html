@@ -4,19 +4,22 @@
     </div>
     <div class="links">
         <ul>
-            <li><a href>Home</a></li>
-            <li id="shop"><a href>Shop</a> <i class="pi pi-angle-down"></i></li>
-            <li><a href>Blogs</a></li>
-            <li><a href>About</a></li>
-            <li><a href>Contact</a></li>
+            <li><a routerLink="/main/home"
+                    routerLinkActive="active">Home</a></li>
+            <li routerLink="/main/shop"
+                routerLinkActive="active"><a>Shop</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
 
         </ul>
     </div>
     <div class="icons">
-        <span class="pi pi-heart"></span>
-        <span class="pi pi-shopping-cart"></span>
+        <span class="pi pi-shopping-cart"><p
+                id="cart">{{cartItemCount}}</p></span>
         <span *ngIf="!status" routerLink="/login" class="pi pi-user"></span>
-        <span *ngIf="status" routerLink="/login" (click)="logOut()" class="pi pi-sign-out"></span>
-        <span class="total">$500</span>
+        <span *ngIf="status" routerLink="/login" (click)="logOut()"
+            class="pi pi-sign-out"></span>
+        <span class="total">{{totalPrice | currency}}</span>
     </div>
 </div>

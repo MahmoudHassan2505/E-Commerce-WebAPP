@@ -12,6 +12,10 @@ import { SearchBarComponent } from './Components/search-bar/search-bar.component
 import { HomeComponent } from './Components/home/home.component';
 import { LandingComponent } from './Components/landing/landing.component';
 import { TrendingComponent } from './Components/trending/trending.component';
+import { ShopComponent } from './Components/shop/shop.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductCardComponent } from './Components/product-card/product-card.component';
+import { CartComponent } from './Components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,17 @@ import { TrendingComponent } from './Components/trending/trending.component';
     SearchBarComponent,
     HomeComponent,
     LandingComponent,
-    TrendingComponent
+    TrendingComponent,
+    ShopComponent,
+    ProductCardComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
