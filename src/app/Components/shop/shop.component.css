@@ -1,7 +1,10 @@
 .container {
+  padding-left: 15px;
   display: grid;
   grid-template-columns: 15% 1fr;
-  height: 89.9vh;
+  height: 100%;
+  background-color: rgb(95, 141, 133);
+  overflow: hidden;
 }
 .sidebar {
   background-color: rgb(95, 141, 133);

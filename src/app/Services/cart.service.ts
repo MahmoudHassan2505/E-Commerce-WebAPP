@@ -11,6 +11,7 @@ export class CartService {
   private cartProducts:CartProduct[] = [];
   totalPrice:number = 0;
 
+
   private itemCountSubject: BehaviorSubject<number> = new BehaviorSubject<number>(this.cartProducts.length);
   private totalPriceSubject: BehaviorSubject<number> = new BehaviorSubject<number>(this.totalPrice);
 
@@ -21,16 +22,26 @@ export class CartService {
   }
 
   add(prod: Product , amount:number){
+    let flag:boolean = true;
+    this.cartProducts.forEach(x=>{
+      if(x.product.id == prod.id){
+        x.amount+=amount
+        flag = false;
+      }
+    })
+   if(flag){
     this.cartProducts.push({
       product: prod,
       amount: amount
     });
+   }
     this.totalPrice += amount * prod.price
     this.updateItemCountAndPrice();
   } 
 
-  remove(){
-    //Remove Logic
+  remove(cartItem:CartProduct){
+    this.totalPrice = this.totalPrice - (cartItem.amount * cartItem.product.price);
+    this.cartProducts = this.cartProducts.filter(item => item.product.id !== cartItem.product.id);
     this.updateItemCountAndPrice();
   }
 

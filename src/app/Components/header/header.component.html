@@ -15,7 +15,8 @@
         </ul>
     </div>
     <div class="icons">
-        <span class="pi pi-shopping-cart"><p
+        <span routerLink="/main/cart" routerLinkActive="active"
+            class="pi pi-shopping-cart"><p
                 id="cart">{{cartItemCount}}</p></span>
         <span *ngIf="!status" routerLink="/login" class="pi pi-user"></span>
         <span *ngIf="status" routerLink="/login" (click)="logOut()"
